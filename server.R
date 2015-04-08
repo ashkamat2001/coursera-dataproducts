@@ -1,7 +1,8 @@
 library(shiny)
 #setwd("Coursera-DataProducts")
+
 #options(shinyapps.http.trace = TRUE)
-#shinyapps::setAccountInfo(name='ashker', token='7A968247428938CAC10452FB3AC4F540', secret='CLL9kw8u7mDg00bZTNdSJhG3cS3kK+dSzNVt5oz+')
+
 compInt = function(principal, rate, term, intType="simple")
 {
   interest=0

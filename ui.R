@@ -12,6 +12,8 @@ shinyUI(pageWithSidebar(
     ),
   
     mainPanel(
+       p("This application computes the simple or compound interest as asked for by the end user, for the deposit amount, interest rate and term selected by the end user."),
+       p("Default input values are populated in the side bar and the following values in the main panel change reactively as the input values change in the side bar"),
        p('Hi :'),
        verbatimTextOutput("oName"),
        p('Deposit Amount :'),
@@ -22,6 +24,7 @@ shinyUI(pageWithSidebar(
        verbatimTextOutput("oRate"),
        p('Interest Type :'),
        verbatimTextOutput("oIntType"),
+       p("However, the following interest value changes only when you click the Compute Interest button in the sidebar. It will not change reactively as input values change"),
        p('Interest Computed :'),
        verbatimTextOutput("interest")
     )
